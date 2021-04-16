@@ -1,0 +1,66 @@
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes highlightTabs {
+    0% {
+        background-color: rgba(255, 255, 255, 0.25);
+        color: dimgray;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.75);
+        color: rgb(255, 185, 163);
+    }
+}
+@keyframes unhighlightTabs {
+    0% {
+        background-color: rgba(255, 255, 255, 0.75);
+        color: rgb(255, 185, 163);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.25);
+        color: dimgray;
+    }
+}
+@keyframes displayPanel {
+    0% {
+        transform: translatey(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes closePanel {
+    0% {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+    100% {
+        transform: translatey(30px);
+        opacity: 0;
+        z-index: -1000;
+    }
+}
+
+@keyframes typeEffect {
+    0% {
+        width: 0;
+        white-space: nowrap;
+    }
+    100% {
+        width: 100%;
+        white-space: normal;
+    }
+}
