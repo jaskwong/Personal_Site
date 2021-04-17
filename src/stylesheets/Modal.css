@@ -1,0 +1,55 @@
+.modal-button, .modal-button:after, .modal-button:focus, .modal-button:before {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 15px;
+    width: 100%;
+}
+
+.modal-button:hover {
+    cursor: pointer;
+}
+
+.modal-button:after, .modal-button:focus {
+    outline: none;
+}
+
+.custom-modal {
+    display: block;
+    position: fixed;
+    width: 70%;
+    top: calc(6% + 30px);
+    margin: 2.5% auto;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    text-align: left;
+    padding: 30px;
+    height: 70%;
+}
+
+.show-modal {
+    opacity: 100%;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.hide-modal {
+    opacity: 0;
+    z-index: -100;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: 0.5s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}

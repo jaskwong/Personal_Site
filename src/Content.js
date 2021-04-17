@@ -121,8 +121,8 @@ export const THIS_SITE = {
             using the react-tsparticles library. All the artwork was drawn by hand and animations are done with
             CSS. You can check out the code <a style={{textDecoration: "underline"}}
                                                href={"https://github.com/jaskwong/Personal_Site"} target={"_blank"}>
-            here</a>. All in all, this website took me about a day. I'm proud of the design I created,
-            and hope you can enjoy it while you're here too!
+            here</a>. All in all, this website took me about 2 days. I'm proud of the design I created,
+            and hope you can enjoy it while you're here too! (Make sure to check out the dark theme :D)
             <br/>
             <br/>
             <h4> Design Choices</h4>

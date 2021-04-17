@@ -1,28 +1,21 @@
-:root {
-    --btn-color: rgba(250, 250, 250, 0.4);
-    --btn-border-color: rgba(250, 215, 150, 0.3)
-}
-
 body {
     position: static;
     text-align: center;
     font-family: "Arial";
-    background-image: url("../images/jasmine_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: gray;
 }
 
 a {
     text-decoration: none;
-    color: dimgray;
 }
 
 a:hover {
     text-decoration: none;
-    color: darkgray;
     animation: linkHover 1s 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .main-container {
@@ -34,7 +27,6 @@ a:hover {
 .main-title {
     font-size: 425%;
     font-weight: 500;
-    color: gray;
     font-family: "Courier New";
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -53,14 +45,12 @@ a:hover {
     }
 }
 
-
 .pfp {
     display: block;
     max-width: 25%;
     float: left;
     margin-right: 10px;
     border-radius: 3px;
-    border: solid 5px rgba(235, 174, 52, 0.2);
 }
 
 @media screen and (max-width: 600px) {
@@ -68,10 +58,7 @@ a:hover {
         top: 30%;
     }
     .main-title {
-        font-size: 8vw;
-    }
-    body {
-        background-image: url("../images/jasmine_background_mobile.png");
+        font-size: 15vw;
     }
     .pfp {
         display: none;
@@ -85,53 +72,37 @@ a:hover {
     margin-right: auto;
 }
 
-.modal-button, .modal-button:after, .modal-button:focus, .modal-button:before {
-    background-color: var(--btn-color);
-    color: gray;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    border: solid 1px var(--btn-border-color);
-    box-shadow: none;
-    padding: 15px;
-    width: 100%;
-    outline: none;
-}
-
-.modal-button:hover {
-    background-color: rgba(255, 243, 212, 0.6);
-    border: solid 1px rgb(255, 243, 212);
-    color: gray;
-    cursor: pointer;
-}
-
-.close-button:hover {
-    color: darkgray;
-}
-
 .tab-container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 5px;
 }
 
 .tab {
-    display: inline-block;
     text-align: center;
     min-width: 20%;
+    flex-grow: 1;
     color: dimgray;
     text-transform: uppercase;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.25);
-    animation: unhighlightTabs 0.5s 1;
+    -webkit-transition: .5s;
+    transition: 0.5s;
 }
 
-.tab:hover {
-    color: rgb(255, 185, 163);
-    background-color: rgba(255, 255, 255, 0.75);
-    animation: highlightTabs 0.5s 1;
+.tab:hover, .tab-active {
+    -webkit-transition: .5s;
+    transition: 0.5s;
 }
 
-.active-tab {
-    color: rgb(255, 185, 163) !important;
-    background-color: rgba(255, 255, 255, 0.9) !important;
+.toggle-container {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+}
+
+.toggle-text {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 ::-webkit-scrollbar {
@@ -142,16 +113,5 @@ a:hover {
 ::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.5);
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 221, 128, 0.7);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 221, 128);
-}
-
 
 
