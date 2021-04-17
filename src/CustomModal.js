@@ -33,17 +33,18 @@ function CustomModal(props) {
         {
             display: "block",
             position: "fixed",
-            width: "80%",
+            width: "70%",
             top: "5%",
             margin: "2.5% auto",
             left: "0",
             right: "0",
-            backgroundColor: "rgba(255, 237, 219, 1)",
+            backgroundColor: "rgba(255, 237, 219, 0.95)",
             borderRadius: "10px",
             textAlign: "left",
             padding: "30px",
             color: "dimgray",
             height: "70%",
+            border: "solid 3px rgba(255, 255, 255, 0.5)",
             animation: show ? "displayPanel 1s 1" : "closePanel 1s forwards",
         }
 

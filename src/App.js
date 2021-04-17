@@ -1,8 +1,9 @@
-import './App.css';
-import './Animations.css'
+import './stylesheets/LightTheme.css';
+import './stylesheets/Animations.css'
 import CustomModal from "./CustomModal";
 import CustomParticles from "./CustomParticles";
 import {ABOUT_ME, PERSONAL_PROJECTS, THIS_SITE} from "./Content"
+import React from 'react'
 
 function App() {
     return (
@@ -10,8 +11,8 @@ function App() {
             <CustomParticles/>
             <div className={"main-container"}>
                 <h1 className={"main-title"}>Jasmine Kwong</h1>
-                <p style={{textTransform: "uppercase"}}>
-                    Hi! My name's Jasmine and this is my website, I hope you like it :D
+                <p>
+                    Hi my name's Jasmine and this is my website, I hope you like it :D
                 </p>
                 <div className={"btn-container"}>
                     <CustomModal data={ABOUT_ME}/>

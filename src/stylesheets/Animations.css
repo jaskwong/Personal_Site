@@ -31,6 +31,16 @@
         color: dimgray;
     }
 }
+
+@keyframes linkHover {
+    0% {
+        color: dimgray;
+    }
+    100% {
+        color: darkgray;
+    }
+}
+
 @keyframes displayPanel {
     0% {
         transform: translatey(-30px);
@@ -57,10 +67,8 @@
 @keyframes typeEffect {
     0% {
         width: 0;
-        white-space: nowrap;
     }
     100% {
         width: 100%;
-        white-space: normal;
     }
 }
