@@ -7,16 +7,26 @@ import React, {useState, useEffect} from 'react'
 import {THEME_ID, THEMES} from "./constants";
 import CustomToggle from "./CustomToggle";
 
-function App() {
-    const [lightMode, setLightMode] = useState(true)
+function App(props) {
+    const [lightMode, setLightMode] = useState(props.theme === "dark")
+
+    useEffect(() => {
+        updateTheme()
+        return () => {
+            localStorage.setItem(THEME_ID, (lightMode? "light" : "dark"));
+        }
+    })
 
     function handleThemeChange() {
-        if (!lightMode) {
+        setLightMode(!lightMode, updateTheme())
+    }
+
+    function updateTheme() {
+        if (lightMode) {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.light)
         } else {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.dark)
         }
-        setLightMode(!lightMode)
     }
 
     return (
