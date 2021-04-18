@@ -1,4 +1,5 @@
 body {
+    background-image: url("../images/jasmine_background.png");
     position: static;
     text-align: center;
     font-family: "Arial";
@@ -58,6 +59,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        background-image: url("../images/jasmine_background_mobile.png");
+    }
     .main-container {
         top: 30%;
     }
