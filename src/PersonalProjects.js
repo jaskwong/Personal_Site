@@ -29,7 +29,7 @@ function PersonalProjects() {
 
     return (
         <div style={{height: "75%"}}>
-            <div className={"tab-container"} style={{maxHeight: "25%", overflowY: "auto"}}>
+            <div className={"tab-container"} style={{maxHeight: "20%", overflowY: "auto"}}>
                 {Object.keys(PERSONAL_PROJECT_TABS).map(tabKey => {
                         let tab = PERSONAL_PROJECT_TABS[tabKey]
                         return (
@@ -47,7 +47,7 @@ function PersonalProjects() {
                 )}
             </div>
             <br/>
-            <div style={{height: "75%", overflowY: "auto"}}>
+            <div style={{height: "80%", overflowY: "auto", lineHeight: "1.75em", fontSize: "120%"}}>
                 {PERSONAL_PROJECT_TABS[currTab].content}
             </div>
         </div>

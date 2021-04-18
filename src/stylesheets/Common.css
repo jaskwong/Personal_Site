@@ -3,6 +3,7 @@ body {
     position: static;
     text-align: center;
     font-family: "Arial";
+    font-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -84,6 +85,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
+    font-size: 130%;
 }
 
 .tab {
