@@ -8,31 +8,30 @@ import {THEME_ID, THEMES} from "./constants";
 import CustomToggle from "./CustomToggle";
 
 function App(props) {
-    const [lightMode, setLightMode] = useState(props.theme === "dark")
+    const [lightMode, setLightMode] = useState((props.theme === "light" || !props.theme))
 
     useEffect(() => {
         updateTheme()
-        return () => {
-            localStorage.setItem(THEME_ID, (lightMode? "light" : "dark"));
-        }
-    })
+    }, [lightMode]);
 
     function handleThemeChange() {
-        setLightMode(!lightMode, updateTheme())
+        setLightMode(!lightMode)
     }
 
     function updateTheme() {
+        console.log("light: " + lightMode)
         if (lightMode) {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.light)
         } else {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.dark)
         }
+        localStorage.setItem(THEME_ID, (lightMode? "light" : "dark"))
     }
 
     return (
         <div>
             <CustomToggle toggle={handleThemeChange}
-                          enabled={!lightMode} enableText={"light"}
+                          enabled={lightMode} enableText={"light"}
                           disableText={"dark"}/>
             <CustomParticles/>
             <div className={"main-container"}>

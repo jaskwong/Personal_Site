@@ -29,7 +29,7 @@ hr {
 }
 
 .pfp {
-    border: solid 5px rgba(235, 174, 52, 0.2);
+    border: solid 5px rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 600px) {
