@@ -50,10 +50,10 @@ function App(props) {
                         </button>
                     </a>
                 </div>
+                <p style={{width: "100%", textAlign: "center", marginTop: "15%", zIndex: "-1", opacity: "0.5"}}>
+                    © Jasmine Kwong 2021
+                </p>
             </div>
-            <p style={{width: "100%", textAlign: "center", position: "absolute", bottom: "2px", zIndex: "-1", opacity: "0.5"}}>
-                © Jasmine Kwong 2021
-            </p>
         </div>
     );
 }
