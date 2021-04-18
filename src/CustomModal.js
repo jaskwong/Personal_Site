@@ -34,7 +34,7 @@ function CustomModal(props) {
             <div className={'custom-modal ' + (show? "show-modal" : "hide-modal")}>
                 <div>
                     <h2 style={{display: "inline-block", width: "94%"}}> {props.data.title} </h2>
-                    <div style={{display: "inline-block", width: "2%", cursor: "pointer"}}
+                    <div style={{display: "inline-block", width: "2%", cursor: "pointer", fontSize: "max(2vw, 2vh)"}}
                          onClick={handleClose} className={"close-button"}> ✕
                     </div>
                 </div>
