@@ -19,7 +19,6 @@ function App(props) {
     }
 
     function updateTheme() {
-        console.log("light: " + lightMode)
         if (lightMode) {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.light)
         } else {
@@ -51,6 +50,9 @@ function App(props) {
                     </a>
                 </div>
             </div>
+            <p style={{width: "100%", textAlign: "center", position: "absolute", bottom: "2px", zIndex: "-1", opacity: "0.5"}}>
+                © Jasmine Kwong 2021
+            </p>
         </div>
     );
 }

@@ -26,12 +26,12 @@
     width: 50%;
     outline: none;
     border: none;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 1);
     transition: 0.2s;
 }
 
 .toggle-btn-enabled {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
