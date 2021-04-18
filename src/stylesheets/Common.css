@@ -5,7 +5,10 @@ body {
     font-family: "Arial";
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: initial;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a {
@@ -44,12 +47,6 @@ a:hover {
     .main-title {
         animation: typeEffect 5s steps(24, end), float 6s ease-in-out infinite;
         white-space: nowrap;
-    }
-    body {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
     }
 }
 
