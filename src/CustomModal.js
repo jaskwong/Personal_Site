@@ -42,7 +42,7 @@ function CustomModal(props) {
 
                 {props.data.component && props.data.component}
                 <br/>
-                <div style={{overflowY: "auto", maxHeight: "75%", lineHeight: "1.75em", fontSize: "120%"}}>
+                <div style={{overflowY: "auto", maxHeight: "75%", lineHeight: "1.75em"}}>
                     {props.data.content}
                 </div>
             </div>

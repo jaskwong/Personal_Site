@@ -47,7 +47,7 @@ function PersonalProjects() {
                 )}
             </div>
             <br/>
-            <div style={{height: "80%", overflowY: "auto", lineHeight: "1.75em", fontSize: "120%"}}>
+            <div style={{height: "80%", overflowY: "auto", lineHeight: "1.75em"}}>
                 {PERSONAL_PROJECT_TABS[currTab].content}
             </div>
         </div>

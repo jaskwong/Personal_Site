@@ -3,7 +3,7 @@ body {
     position: static;
     text-align: center;
     font-family: "Arial";
-    font-size: 100%;
+    font-size: 1.25vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .main-title {
-    font-size: 425%;
+    font-size: 4.5vw;
     font-weight: 500;
     font-family: "Courier New";
     text-transform: uppercase;
@@ -85,7 +85,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    font-size: 130%;
 }
 
 .tab {
