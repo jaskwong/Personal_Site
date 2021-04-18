@@ -3,7 +3,7 @@
     letter-spacing: 0.15em;
     padding: 15px;
     width: 100%;
-    font-size: 1vw;
+    font-size: max(1vw, 1.5vh);
 }
 
 .modal-button:hover {

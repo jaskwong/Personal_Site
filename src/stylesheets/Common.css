@@ -3,7 +3,7 @@ body {
     position: static;
     text-align: center;
     font-family: "Arial";
-    font-size: 1.25vw;
+    font-size: max(1.25vw, 1.75vh);
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
