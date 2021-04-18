@@ -37,9 +37,3 @@
     transform: translateX(100%);
     transition: 0.2s;
 }
-
-@media only screen and (max-width: 768px) {
-    .toggle-container {
-        display:none;
-    }
-}
