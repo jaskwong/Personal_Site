@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, {useState} from "react";
 import {AIPHA_GO_AWAY, PANDEMIC_PAL, TCP_SERVER, TAPESTRY} from "./Content"
 
 function PersonalProjects() {
@@ -34,7 +34,6 @@ function PersonalProjects() {
                         let tab = PERSONAL_PROJECT_TABS[tabKey]
                         return (
                             <a
-                                href={"#"}
                                 className={"tab " + (currTab === tabKey ? "active-tab" : "")}
                                 key={tabKey}
                                 onClick={() => {

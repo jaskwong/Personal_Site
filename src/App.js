@@ -12,7 +12,7 @@ function App(props) {
 
     useEffect(() => {
         updateTheme()
-    }, [lightMode]);
+    });
 
     function handleThemeChange() {
         setLightMode(!lightMode)
@@ -42,7 +42,8 @@ function App(props) {
                     <CustomModal data={ABOUT_ME}/>
                     <CustomModal data={PERSONAL_PROJECTS}/>
                     <CustomModal data={THIS_SITE}/>
-                    <a href={"https://github.com/jaskwong"}
+                    <a rel={"noopener noreferrer"}
+                       href={"https://github.com/jaskwong"}
                        target={"_blank"}>
                         <button className={"modal-button"}>
                             github

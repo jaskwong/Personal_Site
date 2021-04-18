@@ -14,7 +14,7 @@ function CustomToggle(props) {
         } else if (!enabledTemp && props.disableText) {
             setText(props.disableText)
         }
-    })
+    }, [props.enabled, props.enableText, props.disableText] )
 
     function handleToggle() {
         setEnabled(!enabled)

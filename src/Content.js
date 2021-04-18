@@ -6,7 +6,7 @@ export const ABOUT_ME = {
     content:
         <div>
             <div>
-                <img className={"pfp"} src={jasmine}/>
+                <img alt={"Jasmine Kwong"} className={"pfp"} src={jasmine}/>
             </div>
             <div>
                 Hi there! As you may know, my name is Jasmine and I'm a 4th year computer science student at the
@@ -97,7 +97,7 @@ export const TAPESTRY =
         help develop
         an educational WordPress plugin using Vue.js and PHP. The plugin approached education in a non-linear fashion
         to help students make connections between topics via a graph-based interface. You can read more
-        about it <a style={{textDecoration: "underline"}} href={"https://tapestry-tool.com/"}
+        about it <a rel={"noopener noreferrer"} style={{textDecoration: "underline"}} href={"https://tapestry-tool.com/"}
                     target={"_blank"}> here</a>.
         <h4> Accomplishments </h4>
         While working in a team of 3 other software developers, I gained experience in using Vue.js and PHP for the
@@ -119,7 +119,7 @@ export const THIS_SITE = {
             <h4> Overview </h4>
             This site was built using ReactJS and custom CSS - with no bootstrap! The star particles were added
             using the react-tsparticles library. All the artwork was drawn by hand and animations are done with
-            CSS. You can check out the code <a style={{textDecoration: "underline"}}
+            CSS. You can check out the code <a rel={"noopener noreferrer"} style={{textDecoration: "underline"}}
                                                href={"https://github.com/jaskwong/Personal_Site"} target={"_blank"}>
             here</a>. All in all, this website took me about 2 days. I'm proud of the design I created,
             and hope you can enjoy it while you're here too! (Make sure to check out the dark theme :D)
