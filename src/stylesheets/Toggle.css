@@ -11,8 +11,8 @@
 .toggle {
     display: inline-block;
     cursor: pointer;
-    height: 30px;
-    width: 60px;
+    height: max(1vw, 3vh);
+    width: max(2vw, 6vh);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     text-align: left;
