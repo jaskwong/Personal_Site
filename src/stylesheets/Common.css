@@ -1,9 +1,16 @@
 body {
-    background-image: url("../images/jasmine_background.png");
-    position: static;
     text-align: center;
     font-family: "Arial";
     font-size: max(1.25vw, 1.75vh);
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom:0;
+    position: fixed;
+    background-image: url("../images/jasmine_background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -60,7 +67,7 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    body {
+    .body {
         background-image: url("../images/jasmine_background_mobile.png");
     }
     .main-container {
@@ -112,6 +119,10 @@ a:hover {
 .toggle-text {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.modal-button {
+    margin-top: 0.1vh;
 }
 
 ::-webkit-scrollbar {

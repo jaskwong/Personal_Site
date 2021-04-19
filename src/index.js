@@ -17,6 +17,7 @@ let savedTheme = localStorage.getItem(THEME_ID)
 
 ReactDOM.render(
     <React.StrictMode>
+        <div className={"body"}></div>
         <App theme={savedTheme}/>
     </React.StrictMode>,
     document.getElementById('root')

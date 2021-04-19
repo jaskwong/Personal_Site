@@ -24,7 +24,7 @@ function App(props) {
         } else {
             document.getElementById(THEME_ID).setAttribute("href", process.env.PUBLIC_URL + THEMES.dark)
         }
-        localStorage.setItem(THEME_ID, (lightMode? "light" : "dark"))
+        localStorage.setItem(THEME_ID, (lightMode ? "light" : "dark"))
     }
 
     return (
