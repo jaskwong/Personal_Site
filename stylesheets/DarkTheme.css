@@ -4,8 +4,11 @@
 }
 
 body {
-    background-image: url("../images/jasmine_background_dark.png");
     color: white;
+}
+
+.body {
+    background-image: url("../images/jasmine_background_dark.png");
 }
 
 a {
@@ -33,7 +36,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    body {
+    .body {
         background-image: url("../images/jasmine_background_mobile_dark.png");
     }
 }
